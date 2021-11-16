@@ -1,13 +1,19 @@
 // import React from "react";
-import React, { useState } from "react";
-import "./Cards.css";
-import CardItem from "./CardItem";
-import Navbar from "./Navbar";
-import Sidebar from "./Sidebar";
-import { Row, Col } from "react-bootstrap";
-import { render } from "@testing-library/react";
+// import "../../App.css";
 
-const Hero = () => {
+// export default function About() {
+//   return <h1 className="sign-up">About</h1>;
+
+// }
+
+// import React from "react";
+import React, { useState } from "react";
+import "../Cards.css";
+import CardItem from "../CardItem";
+import Navbar from "../Navbar";
+import Sidebar from "../Sidebar";
+
+const About = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
@@ -15,14 +21,11 @@ const Hero = () => {
   };
 
   const pic = [
-    {
-      img: "https://cdn.vox-cdn.com/thumbor/M1qLla2h-V_2yV_Z4nF_NHH_tjA=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/18286450/usa_today_12495932.jpg",
-      name: "vinoda",
-    },
+    { img: "https://i.insider.com/50f967f56bb3f7830a000019", name: "vinoda" },
+    { img: "images/img-2.jpg", name: "vinoda" },
+    { img: "images/img-3.jpg", name: "vinoda" },
     { img: "images/img-8.jpg", name: "vinoda" },
     { img: "images/img-9.jpg", name: "vinoda" },
-    { img: "images/img-1.jpg", name: "vinoda" },
-    { img: "images/img-2.jpg", name: "vinoda" },
   ];
 
   return (
@@ -57,4 +60,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default About;

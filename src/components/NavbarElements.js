@@ -3,9 +3,9 @@ import { NavLink as Link } from "react-router-dom";
 
 export const Nav = styled.nav`
   background: pink;
-  // background: transparent;
-  //height: 80px;
-  // display: flex;
+  //background: transparent;
+  height: 100px;
+  display: flex;
   //justify-content: center;
   font-weight: 700;
 `;
@@ -19,7 +19,7 @@ export const NavLink = styled(Link)`
   cursor: pointer;
 
   @media screen and (max-width: 400px) {
-    position: absolute;
+    // position: absolute;
     top: 10px;
     left: 25px;
   }

@@ -19,7 +19,7 @@ function CardItem(props) {
               <div>&nbsp;</div>
               <i>{props.comment}</i>
               <br />
-              <div>&nbsp;</div>
+            
               <p>{props.description}</p>
               <div>
                 &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;

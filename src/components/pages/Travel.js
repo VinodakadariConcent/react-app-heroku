@@ -19,11 +19,51 @@ const Travel = () => {
   };
 
   const pic = [
-    { img: "https://i.pinimg.com/originals/03/ce/01/03ce015ea85dc84a17fb4c24a96cd87e.jpg", name: "vinoda" },
-    { img: "images/img-1.jpg", name: "vinoda" },
-    { img: "images/img-2.jpg", name: "vinoda" },
-    { img: "images/img-8.jpg", name: "vinoda" },
-    { img: "images/img-9.jpg", name: "vinoda" },
+    {
+      img: "https://i.pinimg.com/originals/03/ce/01/03ce015ea85dc84a17fb4c24a96cd87e.jpg",
+      text: "The edge of nothing lake",
+      discription:
+        "eh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth animation 8-bit hella",
+      comment: "12 Comments",
+      lifestyle: "LIFESTYLE",
+      date: "march 15, 2015 ",
+    },
+    {
+      img: "images/img-1.jpg",
+      text: "The edge of nothing lake",
+      discription:
+        "eh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth animation 8-bit hella",
+      comment: "12 Comments",
+      lifestyle: "LIFESTYLE",
+      date: "march 15, 2015 ",
+    },
+    {
+      img: "images/img-2.jpg",
+      text: "The edge of nothing lake",
+      discription:
+        "eh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth animation 8-bit hella",
+      comment: "12 Comments",
+      lifestyle: "LIFESTYLE",
+      date: "march 15, 2015 ",
+    },
+    {
+      img: "images/img-8.jpg",
+      text: "The edge of nothing lake",
+      discription:
+        "eh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth animation 8-bit hella",
+      comment: "12 Comments",
+      lifestyle: "LIFESTYLE",
+      date: "march 15, 2015 ",
+    },
+    {
+      img: "images/img-9.jpg",
+      text: "The edge of nothing lake",
+      discription:
+        "eh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth animation 8-bit hella",
+      comment: "12 Comments",
+      lifestyle: "LIFESTYLE",
+      date: "march 15, 2015 ",
+    },
   ];
 
   return (
@@ -38,15 +78,23 @@ const Travel = () => {
                 <ul className="cards__items">
                   <CardItem
                     src={userinfo.img}
-                    //text='Explore the hidden waterfall deep inside the Amazon Jungle'
-                    label="Adventure"
-                    //path="/music"
+                    text={userinfo.text}
+                    comment={userinfo.comment}
+                    description={userinfo.discription}
+                    lifestyle={userinfo.lifestyle}
+                    date={userinfo.date}
+                    // label="Adventure"
+                    // path="/music"
                   />
                   <CardItem
                     src={userinfo.img}
-                    // text='Travel through the Islands of Bali in a Private Cruise'
-                    label="Luxury"
-                   // path="/travel"
+                    text={userinfo.text}
+                    comment={userinfo.comment}
+                    description={userinfo.discription}
+                    lifestyle={userinfo.lifestyle}
+                    date={userinfo.date}
+                    // label="Adventure"
+                    // path="/music"
                   />
                 </ul>
               </div>
@@ -59,4 +107,3 @@ const Travel = () => {
 };
 
 export default Travel;
-

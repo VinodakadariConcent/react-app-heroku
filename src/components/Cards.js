@@ -17,12 +17,14 @@ const Hero = () => {
   const pic = [
     {
       img: "https://cdn.vox-cdn.com/thumbor/M1qLla2h-V_2yV_Z4nF_NHH_tjA=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/18286450/usa_today_12495932.jpg",
-      name: "vinoda",
+      text: "The edge of nothing lake",discription:"eh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth animation 8-bit hella",comment:"12 Comments",
+      lifestyle:"LIFESTYLE", date:"march 15, 2015 "
     },
-    { img: "images/img-8.jpg", name: "vinoda" },
-    { img: "images/img-9.jpg", name: "vinoda" },
-    { img: "images/img-1.jpg", name: "vinoda" },
-    { img: "images/img-2.jpg", name: "vinoda" },
+    { img: "images/img-8.jpg", text: "the waves are high & beautiful" ,discription:"eh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth animation 8-bit hella",comment:"12 Comments", lifestyle:"LIFESTYLE",date:"march 15, 2015 "},
+    { img: "images/img-8.jpg", text: "the waves are high & beautiful" ,discription:"Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth animation 8-bit hella",comment:"12 Comments",lifestyle:"LIFESTYLE",date:"march 15, 2015 "},
+    { img: "images/img-9.jpg", text: "GQ at the new yacht club" ,discription:"Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth animation 8-bit hella",comment:"12 Comments",lifestyle:"LIFESTYLE",date:"march 15, 2015 "},
+    { img: "images/img-1.jpg", text: "This is one beautiful car & photo",discription:"Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth animation 8-bit hella",comment:"12 Comments" ,lifestyle:"LIFESTYLE",date:"march 15, 2015 "},
+    { img: "images/img-2.jpg", text: "Coffe in the morning is the absolute best", discription:"Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth animation 8-bit hella",comment:"12 Comments",lifestyle:"LIFESTYLE",date:"march 15, 2015 "},
   ];
 
   return (
@@ -37,14 +39,22 @@ const Hero = () => {
                 <ul className="cards__items">
                   <CardItem
                     src={userinfo.img}
-                    //text='Explore the hidden waterfall deep inside the Amazon Jungle'
-                    label="Adventure"
+                    text={userinfo.text}
+                    comment={userinfo.comment}
+                    description={userinfo.discription}
+                    lifestyle = {userinfo.lifestyle}
+                    date={userinfo.date}
+                    // label="Adventure"
                     // path="/music"
                   />
                   <CardItem
                     src={userinfo.img}
-                    // text='Travel through the Islands of Bali in a Private Cruise'
-                    label="Luxury"
+                    text={userinfo.text}
+                    comment={userinfo.comment}
+                    description={userinfo.discription}
+                    lifestyle = {userinfo.lifestyle}
+                    date={userinfo.date}
+                    // label="Luxury"
                     // path="/travel"
                   />
                 </ul>

@@ -2,9 +2,10 @@ import styled from "styled-components";
 import { NavLink as Link } from "react-router-dom";
 
 export const Nav = styled.nav`
-  background: transparent;
+  background: pink;
+  // background: transparent;
   //height: 80px;
-  display: flex;
+  // display: flex;
   //justify-content: center;
   font-weight: 700;
 `;
@@ -34,6 +35,6 @@ export const NavIcon = styled.div`
 
   p {
     transform: translate(-175%, 100%);
-    //font-weight: bold;
+    font-weight: bold;
   }
 `;

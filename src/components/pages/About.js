@@ -21,11 +21,51 @@ const About = () => {
   };
 
   const pic = [
-    { img: "https://i.insider.com/50f967f56bb3f7830a000019", name: "vinoda" },
-    { img: "images/img-2.jpg", name: "vinoda" },
-    { img: "images/img-3.jpg", name: "vinoda" },
-    { img: "images/img-8.jpg", name: "vinoda" },
-    { img: "images/img-9.jpg", name: "vinoda" },
+    {
+      img: "https://i.insider.com/50f967f56bb3f7830a000019",
+      text: "The edge of nothing lake",
+      discription:
+        "eh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth animation 8-bit hella",
+      comment: "12 Comments",
+      lifestyle: "LIFESTYLE",
+      date: "march 15, 2015 ",
+    },
+    {
+      img: "images/img-2.jpg",
+      text: "The edge of nothing lake",
+      discription:
+        "eh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth animation 8-bit hella",
+      comment: "12 Comments",
+      lifestyle: "LIFESTYLE",
+      date: "march 15, 2015 ",
+    },
+    {
+      img: "images/img-3.jpg",
+      text: "The edge of nothing lake",
+      discription:
+        "eh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth animation 8-bit hella",
+      comment: "12 Comments",
+      lifestyle: "LIFESTYLE",
+      date: "march 15, 2015 ",
+    },
+    {
+      img: "images/img-8.jpg",
+      text: "The edge of nothing lake",
+      discription:
+        "eh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth animation 8-bit hella",
+      comment: "12 Comments",
+      lifestyle: "LIFESTYLE",
+      date: "march 15, 2015 ",
+    },
+    {
+      img: "images/img-9.jpg",
+      text: "The edge of nothing lake",
+      discription:
+        "eh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth animation 8-bit hella",
+      comment: "12 Comments",
+      lifestyle: "LIFESTYLE",
+      date: "march 15, 2015 ",
+    },
   ];
 
   return (
@@ -40,14 +80,22 @@ const About = () => {
                 <ul className="cards__items">
                   <CardItem
                     src={userinfo.img}
-                    //text='Explore the hidden waterfall deep inside the Amazon Jungle'
-                    label="Adventure"
-                    // path="/music"
+                    text={userinfo.text}
+                    comment={userinfo.comment}
+                    description={userinfo.discription}
+                    lifestyle={userinfo.lifestyle}
+                    date={userinfo.date}
+                    // label="Luxury"
+                    // path="/travel"
                   />
                   <CardItem
                     src={userinfo.img}
-                    // text='Travel through the Islands of Bali in a Private Cruise'
-                    label="Luxury"
+                    text={userinfo.text}
+                    comment={userinfo.comment}
+                    description={userinfo.discription}
+                    lifestyle={userinfo.lifestyle}
+                    date={userinfo.date}
+                    // label="Luxury"
                     // path="/travel"
                   />
                 </ul>

@@ -1,0 +1,43 @@
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.cloumn {
+  flex-direction: column;
+}
+
+.leftside {
+  background-image: url("/images/img-2.jpg");
+  height: 50vh;
+  width: 100%;
+}
+.rightside {
+  position: sticky;
+  /* background: blue; */
+  height: 50vh;
+  width: 100%;
+}
+figure {
+  position: absolute;
+  /* padding: 25px; */
+  font-size: 1em;
+  margin: 0 1rem;
+  overflow-x: scroll;
+  height: 100%;
+  text-overflow: auto;
+  margin-top: 1rem;
+  margin-right: 2em;
+  display: block;
+}
+p {
+  font-family: sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  .leftside {
+    height: 100vh;
+  }
+  .rightside {
+    height: 100vh;
+  }
+}

@@ -8,6 +8,9 @@ import Music from "./components/pages/Music";
 import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
 
+//Sub Pages
+import DinnerMenu from "../src/components/pages/SubPages/DinnerMenu";
+import Beach from "./components/pages/SubPages/beachWinter";
 function App() {
   return (
     <>
@@ -19,6 +22,8 @@ function App() {
           <Route path="/music" component={Music} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
+          <Route path="/Dinner" component={DinnerMenu} />
+          <Route path="/beach" component={Beach} />
         </Switch>
       </Router>
     </>
